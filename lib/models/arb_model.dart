@@ -6,11 +6,10 @@ class ArbModel{
 
   Future<Map<String, dynamic>> toKoreanMap() async{
     String korean = await englishToKorean(key);
-    return {key: korean};
+    return {key.replaceAll(" ", ""): korean};
   }
 
   Map<String, dynamic> toEnglishMap(){
-    return {key: key};
+    return {key.replaceAll(" ", ""): key};
   }
-
 }

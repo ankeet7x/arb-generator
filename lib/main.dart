@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:generatorapp/pages/home_page.dart';
 
 void main(){
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
+const String english = "english";
+const String korean = "korean";
 
 class MyApp extends StatelessWidget {
   const MyApp({ Key? key }) : super(key: key);
